@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Ustaad AI",
+    "slug": "ustaad-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo-final.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "scheme": "ustaad-ai",
+    "splash": {
+      "image": "./assets/splash-final.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.ahsan8122.ustaadai",
+      "versionCode": 1,
+      "permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE", "WAKE_LOCK"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo-final.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-notifications"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "59fb9e7e-4262-458b-b889-37e187576284"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/59fb9e7e-4262-458b-b889-37e187576284"
+    }
+  }
+}
