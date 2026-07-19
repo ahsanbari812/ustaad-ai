@@ -42,7 +42,7 @@ Ustaad AI utilizes a structured multi-agent workflow simulated on top of the **G
 ```
 
 ### Core Pipeline Nodes:
-1. **Intent Node** ([agents/intentAgent.ts](file:///c:/Users/Ahsan/Downloads/CHALLENGE%202/ustaad-ai/agents/intentAgent.ts)): Translates natural language requests into structured service definitions using Google Gemini API (`gemini-2.5-flash`). It handles typos, code-switching (Roman Urdu/Urdu/English), and extracts custom intent keywords.
+1. **Intent Node** ([agents/intentAgent.ts](file:///c:/Users/Ahsan/Downloads/CHALLENGE%202/ustaad-ai/agents/intentAgent.ts)): Translates natural language requests into structured service definitions using Google Gemini API (`gemini-3.5-flash`). It handles typos, code-switching (Roman Urdu/Urdu/English), and extracts custom intent keywords.
 2. **Location Node** ([agents/locationAgent.ts](file:///c:/Users/Ahsan/Downloads/CHALLENGE%202/ustaad-ai/agents/locationAgent.ts)): Extracts and maps colloquial names (e.g. "fb area", "pechs") onto normalized coordinates.
 3. **Provider Ranking Node** ([agents/providerRankingAgent.ts](file:///c:/Users/Ahsan/Downloads/CHALLENGE%202/ustaad-ai/agents/providerRankingAgent.ts)): Takes coordinates from the location node and runs the **Haversine formula** to calculate dynamic distances against the provider directory. It scores candidates out of `100` based on:
    * **Distance penalty**: Dynamic score reduction as provider distance increases.
@@ -56,7 +56,7 @@ Ustaad AI utilizes a structured multi-agent workflow simulated on top of the **G
 ## 🛠️ Tech Stack & Dependencies
 * **Core Framework**: Expo SDK 54 (React Native), React 19, TypeScript
 * **Styling**: NativeWind v4 (TailwindCSS Engine) for fluid, premium responsive layouts
-* **AI Cognitive Layer**: Google Gemini Developer API (`gemini-2.5-flash`)
+* **AI Cognitive Layer**: Google Gemini Developer API (`gemini-3.5-flash`)
 * **Persistence Layer**: Local Storage via React Native `@react-native-async-storage/async-storage`
 * **Notification Layer**: Native OS alert triggers via `expo-notifications`
 

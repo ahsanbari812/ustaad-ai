@@ -83,7 +83,7 @@ export default function SystemArchitectureScreen() {
             {/* AI Layer */}
             <View className="bg-[#0A0A0F] border border-purple-500/25 rounded-2xl p-3.5 w-[48%] shadow-sm">
               <Text className="text-purple-400 font-bold text-[8px] uppercase tracking-wider mb-1.5">Cognitive Layer</Text>
-              <Text className="text-white font-extrabold text-sm tracking-tight mb-1" numberOfLines={1}>Gemini Engine</Text>
+              <Text className="text-white font-extrabold text-sm tracking-tight mb-1" numberOfLines={1}>Gemini 3.5 Flash</Text>
               <Text className="text-cyan-100/50 text-[9px] leading-3.5">Deep NLU classification & JSON schema extraction.</Text>
             </View>
 
