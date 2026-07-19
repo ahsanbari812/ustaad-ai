@@ -46,7 +46,7 @@ export async function extractIntent(userInput: string): Promise<ExtractedIntent>
     };
 
     reasoningLogger.log(
-      'Intent Node', 
+      'Intent Node (Gemini 3.5 Flash)', 
       'NLU Analysis', 
       userInput, 
       `Successfully parsed multilingual request. Identified priority service: [${intent.service?.toUpperCase()}]. Urgency classified as ${intent.urgency.toUpperCase()}.`, 
@@ -84,7 +84,7 @@ export async function extractIntent(userInput: string): Promise<ExtractedIntent>
     };
     
     reasoningLogger.log(
-      'Intent Node', 
+      'Intent Node (Gemini 3.5 Flash)', 
       'Fallback Entity Extraction', 
       userInput, 
       `API Unreachable. Invoked Fallback Keyword Heuristics: Service=${intent.service || 'Unknown'}, Urgency=${intent.urgency}`, 

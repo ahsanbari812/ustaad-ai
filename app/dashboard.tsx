@@ -96,7 +96,7 @@ export default function AgentDashboardScreen() {
             <Text className="text-2xl mr-4">🧠</Text>
             <View className="flex-1">
               <Text className="text-white font-extrabold text-sm tracking-wide">Intent Agent Node</Text>
-              <Text className="text-slate-400 text-[10px] mt-0.5">NLU & Multilingual Request Classifier</Text>
+              <Text className="text-slate-400 text-[10px] mt-0.5">NLU & Multilingual Request Classifier (Gemini 3.5 Flash)</Text>
             </View>
             <View className="bg-cyan-500/10 border border-cyan-500/20 px-2.5 py-1 rounded-md">
               <Text className="text-cyan-400 text-[8px] font-extrabold tracking-wider">ONLINE</Text>
@@ -107,7 +107,7 @@ export default function AgentDashboardScreen() {
             <Text className="text-2xl mr-4">📍</Text>
             <View className="flex-1">
               <Text className="text-white font-extrabold text-sm tracking-wide">Location Parsing Node</Text>
-              <Text className="text-slate-400 text-[10px] mt-0.5">Geospatial Entity Extractor</Text>
+              <Text className="text-slate-400 text-[10px] mt-0.5">Geospatial Entity Extractor (Gemini 3.5 Flash)</Text>
             </View>
             <View className="bg-cyan-500/10 border border-cyan-500/20 px-2.5 py-1 rounded-md">
               <Text className="text-cyan-400 text-[8px] font-extrabold tracking-wider">ONLINE</Text>

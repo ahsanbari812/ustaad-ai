@@ -97,7 +97,7 @@ export default function Index() {
               </View>
               <Text className="text-white font-extrabold text-xs mb-1.5 uppercase tracking-wider">Multilingual NLU</Text>
               <Text className="text-slate-400 text-xs leading-5">
-                Uses Google Gemini models to instantly translate and parse unstructured Roman Urdu and English requests into structured intent entities.
+                Uses Google Gemini 3.5 Flash to instantly translate and parse unstructured Roman Urdu and English requests into structured intent entities.
               </Text>
             </View>
 

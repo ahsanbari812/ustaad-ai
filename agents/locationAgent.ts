@@ -37,7 +37,7 @@ export async function extractLocation(message: string): Promise<string | null> {
     const parsed = JSON.parse(cleaned);
 
     const location = parsed.location || null;
-    reasoningLogger.log('Location Agent', 'Geospatial Parsing', message, location ? `Mapped colloquial area to normalized geographical zone: ${location}.` : `No specific location detected. Defaulting to city-wide search.`, Date.now() - startTime, location ? 98 : 75);
+    reasoningLogger.log('Location Agent (Gemini 3.5 Flash)', 'Geospatial Parsing', message, location ? `Mapped colloquial area to normalized geographical zone: ${location}.` : `No specific location detected. Defaulting to city-wide search.`, Date.now() - startTime, location ? 98 : 75);
     return location;
   } catch (error) {
     // Basic fallback
@@ -55,7 +55,7 @@ export async function extractLocation(message: string): Promise<string | null> {
       if (found === 'dha') location = 'DHA';
     }
     
-    reasoningLogger.log('Location Agent', 'extract_location_fallback', message, `Detected location: ${location}`, Date.now() - startTime);
+    reasoningLogger.log('Location Agent (Gemini 3.5 Flash)', 'extract_location_fallback', message, `Detected location: ${location}`, Date.now() - startTime);
     return location;
   }
 }
